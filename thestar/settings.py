@@ -25,7 +25,7 @@ SECRET_KEY = '!=8za1e$hyi%@db_9viqfthgw@%^n%x04o_9t2c%fk#dv@l=ys'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*','https://hrd-star.herokuapp.com/']
 
 
 # Application definition
@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'thestar.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd5va58ninuci1d',
+        'USER': 'tfemvckkavzgmv',
+        'PASSWORD': '6655f30fbf2229e024c99a916141da6fd16acb1fd5764ee107b13c43fca7e7c9',
+        'HOST': 'ec2-3-216-181-219.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
